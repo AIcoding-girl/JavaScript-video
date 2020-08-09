@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e7e7e7;
+    width: 100vw;
+    height: 100vh;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container {
+    position: relative;
+    height: 300px;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.2);
+}
+
+.video-player {
+    height: 100%;
+}
+
+/* Controls */
+
+.video-controls {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    /* opacity: 0;
+    transition: opacity 200ms ease-in-out; */
+}
+
+.btn {
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 5px 5px 20px rgb(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: #fff;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+/* Progress bar */
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #30c5ff;
+    width: 0%;
+    height: 10px;
+    z-index: 9;
+}
+
+.progress-bar-underlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #30c4ff1e;
+    width: 100%;
+    height: 10px;
+    z-index: 1;
+}
